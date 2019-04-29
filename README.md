@@ -21,13 +21,13 @@ git clone https://github.com/winter0mute/manjaro-playbook.git
 ### Install everything
 ```
 ansible-galaxy install -r requirements.yml
-ansible-playbook playbook.yml --extra-vars="user_name=USERNAME user_email=EMAIL" --ask-become-pass
+ansible-playbook playbook.yml --extra-vars="user_name=$(who | head -n1 | cut -d' ' -f1) user_email=EMAIL" --ask-become-pass
 ```
 
 ### Install everything with debug turned on
 ```
 ansible-galaxy -v install -r requirements.yml
-ansible-playbook -vvv playbook.yml --extra-vars="user_name=USERNAME user_email=EMAIL" --ask-become-pass
+ansible-playbook -vvv playbook.yml --extra-vars="user_name=$(who | head -n1 | cut -d' ' -f1) user_email=EMAIL" --ask-become-pass
 ```
 
 ## Playbook Tags
@@ -45,7 +45,7 @@ Tags supported:
 
 Example on how to install only browsers:
 ```
-ansible-playbook playbook.yml --extra-vars="user_name=USERNAME user_email=EMAIL" --ask-become-pass --tags browsers
+ansible-playbook playbook.yml --extra-vars="user_name=$(who | head -n1 | cut -d' ' -f1) user_email=EMAIL" --ask-become-pass --tags browsers
 ```
 
 ## TODO
