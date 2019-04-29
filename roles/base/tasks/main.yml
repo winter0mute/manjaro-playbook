@@ -25,6 +25,8 @@
 - name: Creates terminator config directory
   file:
     path: /home/{{ user_name }}/.config/terminator
+    owner: '{{ user_name }}'
+    group: '{{ user_name }}'
     state: directory
   become: yes
 
