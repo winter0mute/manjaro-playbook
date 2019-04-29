@@ -13,7 +13,7 @@ sudo pacman -S ansible git --noconfirm
 
 2. Git clone the current project
 ```
-git clone git@github.com:winter0mute/manjaro-playbook.git
+git clone https://github.com/winter0mute/manjaro-playbook.git
 ```
 
 ## Run
