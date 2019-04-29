@@ -7,7 +7,7 @@ based on Arch Linux. It should run locally after a clean OS install.
 
 1. Refresh the copy of the master package database from the server and install `Ansible` and `Git`
 ```
-sudo pacman -Syy
+sudo pacman -Syyu --noconfirm
 sudo pacman -S ansible git --noconfirm
 ```
 
