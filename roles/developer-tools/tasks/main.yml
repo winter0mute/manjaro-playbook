@@ -3,8 +3,9 @@
   pacman:
     name: '{{ developer_stack }}'
     state: present
-  become_user: '{{ user_name }}'
+  become_user: 'root'
   become: yes
+  become_method: su
 
 - name: Install Developer Tools that require sudo
   pacman:
