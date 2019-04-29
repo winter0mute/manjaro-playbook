@@ -36,12 +36,11 @@ Tags supported:
 
 | Tag       | Description                                                             |
 |-----------|-------------------------------------------------------------------------|
-| base      | Install Linux util libraries, python-pip, xinput, terminator and zsh    |
+| base      | Install Linux util libraries, python-pip, terminator                    |
 | browsers  | Install Chrome                                                          |
-| dev-tools | Install Docker, nodejs, npm, jre8, jre10, maven, clojure and leiningen  |
-| editors   | Install vim, atom, emacs and gimp                                       |
+| dev-tools | Install Docker, jq                                                      |
+| editors   | Install vim, atom, and gimp                                             |
 | media     | Install Spotify                                                         |
-| gnome     | Configure the desktop environment                                       |
 | aur       | Install Arch User Repository libraries                                  |
 
 Example on how to install only browsers:

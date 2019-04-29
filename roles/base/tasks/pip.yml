@@ -1,6 +1,6 @@
 ---
-- name: "Upgrade pip to v18.0"
-  shell: pip install --upgrade pip==18.0
+- name: "Upgrade pip"
+  shell: pip install --upgrade
   become: yes
 
 - name: "Install pip packages"
