@@ -45,3 +45,7 @@
   with_items: "{{ shell_aliases }}"
   become_user: '{{ user_name }}'
   become: yes
+ 
+- name: Enable ILoveCandy in pacman config
+  lineinfile: dest=/etc/pacman.conf regexp='ILoveCandy' insertafter='# Misc options' line='ILoveCandy' 
+
