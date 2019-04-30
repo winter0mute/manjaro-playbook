@@ -48,4 +48,7 @@
  
 - name: Enable ILoveCandy in pacman config
   lineinfile: dest=/etc/pacman.conf regexp='ILoveCandy' insertafter='# Misc options' line='ILoveCandy' 
+  become_user: 'root'
+  become: yes
+  become_method: su
 
