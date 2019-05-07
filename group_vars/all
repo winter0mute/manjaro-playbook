@@ -38,4 +38,5 @@ utils_aur:
     - git-extras
 
 pip_packages:
+    - pip
     - thefuck
