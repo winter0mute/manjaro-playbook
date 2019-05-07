@@ -40,7 +40,6 @@ Tags supported:
 | browsers  | Install Chrome                                                          |
 | dev-tools | Install Docker, jq                                                      |
 | editors   | Install vim, atom, and gimp                                             |
-| media     | Install Spotify                                                         |
 | aur       | Install Arch User Repository libraries                                  |
 
 Example on how to install only browsers:

@@ -13,9 +13,6 @@ editors:
     - atom
     - gimp
 
-media_aur:
-    - spotify
-
 shell_aliases:
     - alias ll='ls -l'
     - alias vi=vim
