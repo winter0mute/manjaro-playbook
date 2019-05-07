@@ -30,6 +30,7 @@ utils:
     # - xorg-xinput
     - bash-completion
     - glances
+    - flatpak
 
 utils_aur:
     - git-extras

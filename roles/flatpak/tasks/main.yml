@@ -1,0 +1,12 @@
+---
+- name: Install flatpak
+  pacman:
+    name: flatpak
+    state: present
+  become: yes
+
+- name: Install the Spotify from Flathub
+  flatpak:
+    name: com.spotify.Client
+    state: present
+    remote: flathub
