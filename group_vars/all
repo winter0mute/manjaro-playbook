@@ -32,6 +32,7 @@ utils:
     # - xclip
     # - xorg-xinput
     - bash-completion
+    - glances
 
 utils_aur:
     - git-extras
