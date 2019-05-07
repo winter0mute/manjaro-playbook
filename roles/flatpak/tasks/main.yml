@@ -10,3 +10,9 @@
     name: com.spotify.Client
     state: present
     remote: flathub
+
+- name: Install the Dropbox from Flathub
+  flatpak:
+    name: com.dropbox.Client
+    state: present
+    remote: flathub
