@@ -1,6 +1,6 @@
 ---
 - name: Install flatpak
-  pacman:
+  package:
     name: flatpak
     state: present
   become: yes

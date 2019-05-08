@@ -1,6 +1,6 @@
 ---
 - name: Install editors
-  pacman:
+  package:
     name: '{{ editors }}'
     state: present
   become: yes

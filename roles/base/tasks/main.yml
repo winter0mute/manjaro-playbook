@@ -1,6 +1,6 @@
 ---
 - name: Install Utils
-  pacman:
+  package:
     name: '{{ utils }}'
     state: present
   become: yes
