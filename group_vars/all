@@ -16,6 +16,7 @@ editors:
 shell_aliases:
     - alias ll='ls -l'
     - alias vi=vim
+    - alias glances='glances -b -1'
 
 utils:
     - binutils

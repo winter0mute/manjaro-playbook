@@ -1,0 +1,58 @@
+---
+- name: Creates glances config directory
+  file:
+    path: /etc/glances
+    owner: 'root'
+    group: 'root'
+    state: directory
+  become_user: 'root'
+  become: yes
+  become_method: su
+
+- name: Copy glances.conf from template
+  copy:
+    src: glances.conf
+    dest: /etc/glances/glances.conf
+  become_user: 'root'
+  become: yes
+  become_method: su
+
+# - name: Alter network params in glances.conf
+#   lineinfile:
+#     path: /etc/glances/glances.conf
+#     insertafter: '^\[network\]'
+#     line: 'hide=docker.*,lo,vmnet*,veth*,br-*'
+#   become_user: 'root'
+#   become: yes
+#   become_method: su
+#
+# - name: Alter diskio params in glances.conf
+#   lineinfile:
+#     path: /etc/glances/glances.conf
+#     regexp: '^hide=loop.*'
+#     line: 'hide=loop.*,sr.*'
+#   become_user: 'root'
+#   become: yes
+#   become_method: su
+#
+# - name: Create bash shell aliase for glances
+#   lineinfile:
+#     path: /home/{{ user_name }}/.bashrc
+#     regexp: "\n#Start glances with options:\n#-b     Display network rate in Byte per second (default: bit per second)\n#-1     Start Glances in per CPU mode\nalias glances='glances -b -1'"
+#     # line: 'alias glances=\'glances -b -1\''
+#     line: "\n#Start glances with options:\n#-b     Display network rate in Byte per second (default: bit per second)\n#-1     Start Glances in per CPU mode\nalias glances='glances -b -1'"
+#     # owner: '{{ user_name }}'
+#     state: present
+#   become_user: '{{ user_name }}'
+#   become: yes
+
+# - name: Create bash shell aliase for glances
+#   blockinfile:
+#     path: /home/{{ user_name }}/.bashrc
+#     block: |
+#       #Start glances with options:
+#       #-b     Display network rate in Byte per second (default: bit per second)
+#       #-1     Start Glances in per CPU mode
+#       alias glances='glances -b -1'
+#     become_user: '{{ user_name }}'
+#     become: yes
