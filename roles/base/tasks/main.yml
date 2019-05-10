@@ -3,6 +3,7 @@
   pacman:
     update_cache: yes
     upgrade: yes
+  become: yes
 
 - name: Install Utils
   package:
