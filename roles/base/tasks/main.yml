@@ -1,4 +1,9 @@
 ---
+- name: Upgrade all packages (pacman -Syu)
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
 - name: Install Utils
   package:
     name: '{{ utils }}'
