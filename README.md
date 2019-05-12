@@ -5,10 +5,12 @@ based on Arch Linux. It should run locally after a clean OS install.
 
 ## Preamble
 
-1. Refresh the copy of the master package database from the server and install `Ansible` and `Git`
+1. Refresh the copy of the master package database from the server and install `Ansible` and `Git`.  
+Also do a reboot to reload the newly installed packages/modules.
 ```
 sudo pacman -Syyu --noconfirm
 sudo pacman -S ansible git --noconfirm
+sudo reboot
 ```
 
 2. Git clone the current project
