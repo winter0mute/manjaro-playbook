@@ -7,7 +7,7 @@
     state: directory
   become_user: 'root'
   become: yes
-  become_method: su
+  become_method: sudo
 
 - name: Copy glances.conf from template
   copy:
@@ -15,4 +15,4 @@
     dest: /etc/glances/glances.conf
   become_user: 'root'
   become: yes
-  become_method: su
+  become_method: sudo

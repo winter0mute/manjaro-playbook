@@ -5,7 +5,7 @@
     state: present
   become_user: 'root'
   become: yes
-  become_method: su
+  become_method: sudo
 
 - name: Install Developer Tools that require sudo
   package:
@@ -13,6 +13,6 @@
     state: present
   become_user: 'root'
   become: yes
-  become_method: su
+  become_method: sudo
 
 - include: docker-config.yml
