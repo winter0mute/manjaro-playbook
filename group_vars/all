@@ -32,6 +32,7 @@ utils:
     - bash-completion
     - glances
     - flatpak
+    - transmission-remote-gtk
 
 utils_aur:
     - git-extras
